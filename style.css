@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  color: #0cd977;
+}
+
+.konami-logo {
+  width: 200px;
+}
+section {
+  display: grid;
+  place-items: center;
+  gap: 20px;
+}
+button {
+  background-color: #0cd977;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
+.yes {
+  background-color: crimson;
+}
+button:hover {
+  filter: grayscale(20%);
+}
+button:active {
+  filter: brightness(120%);
+}
