@@ -33,3 +33,13 @@ button:hover {
 button:active {
   filter: brightness(120%);
 }
+
+/* .combo {
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+} */
