@@ -5,7 +5,7 @@ const btn = document.querySelector('.yes')
 let sectionel = document.createElement('section')
 sectionel.setAttribute('class','playsection')
 let h2el = document.createElement('h2')
-h2el.innerText = `let's play`
+h2el.innerText = `let's play!!! Type the key after the arrows dispear`
 let divel = document.createElement('div')
 divel.setAttribute('class', 'images')
 let imgeelone = document.createElement('img')
@@ -38,7 +38,7 @@ function createel(){
     setTimeout(function (){
         console.log('lol')
         sectionel.remove()
-    },5000)
+    },4000)
 }
 
 const combo = [

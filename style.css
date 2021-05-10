@@ -23,18 +23,31 @@ button {
   border: none;
   color: white;
   border-radius: 10px;
+  margin-right: 20px;
 }
 .yes {
   background-color: crimson;
 }
 button:hover {
-  filter: grayscale(20%);
+  filter: grayscale(50%);
 }
 button:active {
   filter: brightness(120%);
 }
-
-/* .combo {
+.playsection {
+  transform: translateY(-150px);
+}
+.playsection h2 {
+  color: red;
+}
+.images {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(50px, 100px));
+}
+img {
+  width: 50px;
+}
+.combo {
   animation: spin 5s linear infinite;
 }
 
@@ -42,4 +55,4 @@ button:active {
   100% {
     transform: rotate(360deg);
   }
-} */
+}
