@@ -35,8 +35,14 @@ button:active {
   filter: brightness(120%);
 }
 .playsection {
-  transform: translateY(-150px);
+  transform: translateY(-100px);
 }
+.playsection-one {
+  display: grid;
+  grid-template-columns: repeat(8, 60px);
+  gap: 20px;
+}
+
 .playsection h2 {
   color: red;
 }

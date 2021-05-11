@@ -1,7 +1,7 @@
 // https://en.wikipedia.org/wiki/Konami_Code
 const btns = document.querySelector('.buttons')
 const btn = document.querySelector('.yes')
-
+let orginalsection = document.querySelector('.sectionori')
 let sectionel = document.createElement('section')
 sectionel.setAttribute('class','playsection')
 let h2el = document.createElement('h2')
@@ -11,9 +11,9 @@ divel.setAttribute('class', 'images')
 let imgeelone = document.createElement('img')
 imgeelone.setAttribute('src','up.svg')
 let imgeeltwo = document.createElement('img')
-imgeeltwo.setAttribute('src','down.svg')
+imgeeltwo.setAttribute('src','up.svg')
 let imgeelthree = document.createElement('img')
-imgeelthree.setAttribute('src','up.svg')
+imgeelthree.setAttribute('src','down.svg')
 let imgeelfour = document.createElement('img')
 imgeelfour.setAttribute('src','down.svg')
 let imgeelfive = document.createElement('img')
@@ -29,6 +29,7 @@ sectionel.append(h2el, divel)
 
 
 btn.addEventListener('click', function(){
+   orginalsection.remove()
     btns.remove()
     setTimeout(createel,1000)
 })
@@ -36,7 +37,6 @@ btn.addEventListener('click', function(){
 function createel(){
     document.body.append(sectionel)
     setTimeout(function (){
-        console.log('lol')
         sectionel.remove()
     },4000)
 }
@@ -53,11 +53,28 @@ const combo = [
   ];
   
   let comboIndex = 0;
-  
+  let sectionelnew = document.createElement('section')
   document.addEventListener("keydown", function (event) {
     // get the key pressed by the user
     const keyPressed = event.key.toLowerCase().replace("arrow", "");
-  
+    let imageel = document.createElement('img')
+    imageel.setAttribute('class','show')
+    sectionelnew.setAttribute('class','playsection-one')
+    if(keyPressed === 'up'){
+      imageel.setAttribute('src','up.svg')
+    }
+    if(keyPressed === 'down'){
+      imageel.setAttribute('src','down.svg')
+    }
+    if(keyPressed === 'left'){
+      imageel.setAttribute('src','left.svg')
+    }
+    if(keyPressed === 'right'){
+      imageel.setAttribute('src','right.svg')
+    }
+    
+    sectionelnew.append(imageel)
+    document.body.append(sectionelnew)
     // get the current key in the combo
     const currentComboKey = combo[comboIndex];
   
