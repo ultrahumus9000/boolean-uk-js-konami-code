@@ -56,7 +56,11 @@ img {
 .combo {
   animation: spin 5s linear infinite;
 }
-
+.show {
+  background: linear-gradient(-20deg, lightgreen, cyan);
+  border-radius: 50%;
+  padding: 5px;
+}
 @keyframes spin {
   100% {
     transform: rotate(360deg);
